@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Персонализиран график</title>
+		<link rel="stylesheet" href="style/personal-schedule.css" />
+		<script src="script/personal-schedule.js" defer></script>
+	</head>
+	<body>
+		<nav>
+			<button id="schedule-page-button">График на презентации</button>
+			<button id="personalised-schedule-button">Персонализиран график</button>
+			<button id="view-statistics">Статистика</button>
+			<button id="logout-button">Изход от системата</button>
+		</nav>
+		<section id="information">
+			<h2 id="username">Здравейте</h2>
+			<h2>Това е вашият персонален график.</h2>
+			<button id="apply-changes">Приложи промените</button>
+			<label id="messageLabel"></label>
+		</section>
+		<section id="filters">
+			<section id="filter-options">
+				<label for="filter-by-day">Избери ден на представяне
+					<select id="filter-by-day">
+						<option disabled selected value></option>
+						<option value="day1">ден 1</option>
+						<option value="day2">ден 2</option>
+						<option value="day3">ден 3</option>
+					</select>
+				</label>
+				<label for="filter-by-group">Избери група на представящия
+					<select id="filter-by-group">
+						<option disabled selected value></option>
+						<option value="group1">група 1</option>
+						<option value="group2">група 2</option>
+						<option value="group3">група 3</option>
+						<option value="group4">група 4</option>
+					</select>
+				</label>
+				<label for="filter-by-preference">Избери предпочитание
+					<select id="filter-by-preference">
+						<option disabled selected value></option>
+						<option value="willAttend">ще отида</option>
+						<option value="couldAttend">може би ще отида</option>
+					</select>
+				</label>
+			</section>
+			<section id="filter-buttons">
+				<button id="apply-filter">Приложете филтъра</button>
+				<button id="reset-filter">Изчистете филтъра</button>
+			</section>
+		</section>
+		<main id="personal-events"></main>
+		<footer>
+			<p>Разработено за курса по "Front-End Web" във Факултета по математика и информатика</p>
+		</footer>
+	</body>
+</html>
